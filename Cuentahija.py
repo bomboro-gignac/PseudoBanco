@@ -2,7 +2,7 @@
 
 from Cuenta import *
 #importamos la clase madrte
-class Cuentahija(Cuenta):
+class CuentaHija(Cuenta):
     def __init__(self, valor, tipo):
         Cuenta.__init__(self, valor)
         self.__tipo = tipo

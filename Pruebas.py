@@ -2,7 +2,7 @@
 
 from Cuenta import *
 from Cliente import *
-from Cuentahija import *
+from CuentaHija import *
 from CuentaCredito import *
 from CuentaDeAhorro import *
 #importamos las clases
@@ -20,11 +20,13 @@ print (Cuenta1.consulta())
 print()
 
 Cuenta2 = Cuenta(4000)
-#print (Cuenta2.consulta())
+print (Cuenta2)
 
+Cuenta2.setCantidad(200)
+print(Cuenta2)
 print()
 
-Cuenta3 = Cuentahija(2000, "credito" )
+Cuenta3 = CuentaHija(2000, "credito" )
 print(Cuenta3)
 Cuenta3.depositar(330)
 Cuenta3.retirar(10000)
@@ -32,9 +34,11 @@ Cuenta3.retirar(10000)
 print()
 
 Cliente1 = Cliente ("Juan", 34, "coyoacan", Cuenta1)
+
+Cliente1.setdireccion("Xochimilco")
 Cliente2 = Cliente ("Tommy",23,"tlalpan", Cuenta2)
 print(Cliente1)
-
+Cliente2.setedad(45)
 print()
 
 print(Cliente2)
@@ -46,8 +50,8 @@ Cuenta8.retirar(1300)
 print()
 
 print(Cuenta8)
-#a = Cuenta8.getSobregiro()
-#print(a)
+a = Cuenta8.getSobregiro()
+print(a)
 
 Cliente9 = Cliente ("pepe", 36, "coyoacan", Cuenta8)
 
@@ -74,5 +78,7 @@ print(Cuenta11)
 
 print()
 
-#Imprimimos los tres casos del metodo retirar de la clase CuentaCredito
+Cuenta12 = CuentaCredito(500,2000)
+Cuenta12.retirar(600)
+print(Cuenta12)
 
