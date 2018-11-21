@@ -11,9 +11,7 @@ class CuentaDeAhorro(Cuenta):
         self.__ti = ti 
 
     def __str__( self ):
-        tmp = ""
+        tmp = "\n\n===================\n Cuenta ahorro\n"
         tmp += "Cantidad disponible en la cuenta:" + str( self.getCantidad())
         tmp += "\nTasa de Interes:" + str( self.__ti)
-        return tmp
-
-      #sobreescribimos el metodo str pues ahora queremos que se imprima la tasa de interes
+        return tmp         

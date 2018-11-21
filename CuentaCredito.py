@@ -35,6 +35,7 @@ class CuentaCredito(Cuenta):
 
         else: 
             print ("tu numero es negativo")
+        return
 # Se sobreescribe el metodo retirar pues ahora tenemos nuevas condiciones sobre este.  
     
   
@@ -42,12 +43,11 @@ class CuentaCredito(Cuenta):
         return self.__sobregiro 
 
     def setSobregiro(self,sobregiro):
-        self.sobregiro = sobregiro      
-
-# decidi poner el metodo getSobregiro unicamente para poder acceder al atributo sobregiro del objeto cuenta de ahorro y el metodo set para modificar el atriuto pues es privado       
+        self.sobregiro = sobregiro
+        return      
 
     def __str__( self ):
-        tmp = ""
+        tmp = " \n\n===================\n Cuenta credito\n"
         tmp += "Cantidad disponible en la cuenta:" + str( self.getCantidad())
         tmp += "\nSobregiro:" + str( self.__sobregiro)
         return tmp    

@@ -7,10 +7,11 @@ class Cuenta:
     
     def depositar(self,valor):
         if valor >= 0:
-           self.__cantidad += valor
+           self.__cantidad = self.__cantidad + valor
            print ("Deposito exitoso") 
         else:
-           print ("La cantidad es negativa")  
+           print ("La cantidad es negativa")
+        return 
     
     def retirar (self,valor):
       if valor >= 0:
@@ -21,11 +22,12 @@ class Cuenta:
            print ("saldo insuficiente")
       else: 
         print ("tu numero es negativo")
+      return
         
     def __str__( self ):
-        tmp = ""
-        tmp += "Cantidad::" + str( self.__cantidad)
-        return tmp
+      tmp = ""
+      tmp += "Cantidad::" + str( self.__cantidad)
+      return tmp
     
     def consulta(self):
         return self.__cantidad
@@ -40,6 +42,8 @@ class Cuenta:
 
     def getCantidad (self):
         return self.__cantidad 
+
+        
     #decidi poner los metodos setter y getter para el atributo de valor porque
     #pienso que es algo que se puede ir modificando constatemente a lo largo del tiempo"""          
     
