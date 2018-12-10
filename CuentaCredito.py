@@ -51,5 +51,6 @@ class CuentaCredito(Cuenta):
         tmp += "Cantidad disponible en la cuenta:" + str( self.getCantidad())
         tmp += "\nSobregiro:" + str( self.__sobregiro)
         return tmp    
-
+    def datos(self):
+        return "C,"+str(self.getCantidad())+","+str(self.__sobregiro)
 #de igual manera se sobreescribe el metodo str pues tenemo que imprimir un nuevo atributo que es el de sobregiro        

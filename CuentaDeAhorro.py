@@ -14,4 +14,6 @@ class CuentaDeAhorro(Cuenta):
         tmp = "\n\n===================\n Cuenta ahorro\n"
         tmp += "Cantidad disponible en la cuenta:" + str( self.getCantidad())
         tmp += "\nTasa de Interes:" + str( self.__ti)
-        return tmp         
+        return tmp
+    def datos(self):
+        return "A,"+str(self.getCantidad())+","+str(self.__ti)     

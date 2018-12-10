@@ -11,24 +11,33 @@ class MenuUsuario :
         pass
 #metodo que interactua con una persona donde se pueden elegir 3 opciones
     def MenuCuenta(self,cliente):
-        opciones = "Menu cuenta"
-        opciones += "\n Teclee la opcion correcta"
-        opciones += "\n 1.Agregar cuenta"
-        opciones += "\n 2.Eliminar cuenta"
-        opciones += "\n 3.Depositar en cuenta"
-        opciones += "\n 4.Retirar dinero de la cuenta"
-        print(opciones)
-        opcion = input()
-        print("Elegiste la opcion:" + opcion)
-        print("\n")
-        if opcion == "1":
-            self.MenuagregarCuentas(cliente)
-        elif opcion =="2":
-            self.MenuEliminarCuentas(cliente)
-        elif opcion =="3":
-            self.MenuDepositarCuenta(cliente)
-        elif opcion == "4":
-            self.MenuRetirarCuenta(cliente)
+        flag = True
+        while (flag):
+          opciones = "Menu cuenta"
+          opciones += "\n Teclee la opcion correcta"
+          opciones += "\n 1.Agregar cuenta"
+          opciones += "\n 2.Eliminar cuenta"
+          opciones += "\n 3.Depositar en cuenta"
+          opciones += "\n 4.Retirar dinero de la cuenta"
+          print(opciones)
+          opcion = input()
+          print("Elegiste la opcion:" + opcion)
+          print("\n")
+          if opcion == "1":
+              self.MenuagregarCuentas(cliente)
+          elif opcion =="2":
+              self.MenuEliminarCuentas(cliente)
+          elif opcion =="3":
+              self.MenuDepositarCuenta(cliente)
+          elif opcion == "4":
+              self.MenuRetirarCuenta(cliente)
+          opciones = "\n Desea Realizar otra transaccion?"
+          opciones += "\n 1.Si"
+          opciones += "\n 2.No"
+          print(opciones)
+          opcion = input()
+          if opcion == "2":
+              flag = False
         return
         
         
@@ -57,7 +66,7 @@ class MenuUsuario :
             tasa = input(" ")
             print("Saldo inicial establecido:" + saldo)
             print("Tasa de interes acordada:" + tasa)
-            ca = CuentaDeAhorro(int(saldo),int(tasa))
+            ca = CuentaDeAhorro(float(saldo),float(tasa))
             cliente.agregarCuentas(ca)
         elif opc == "2":
             print("Creacion de cuenta de Credito")
@@ -74,7 +83,11 @@ class MenuUsuario :
 #metodo que permite depositar dinero en alguna cuenta
     def MenuDepositarCuenta(self, cliente):
         print( " \n Eligió agregar dinero a la cuenta")
-        print(cliente.cteCuentas())
+        if(len(cliente.cteCuentas())==0):
+            print("  El cliente no tiene asignado ninguna cuenta")
+            return
+        else :
+             print(cliente.cteCuentas())
         opc = input(" \n Eliga el indice de la cuenta donde desee agregar dinero \n")
         cliente.getCuenta(int(opc))
         aux = cliente.getCuenta(int(opc))
@@ -86,7 +99,11 @@ class MenuUsuario :
 #metodo que permite retirar dinero de una uenta
     def MenuRetirarCuenta(self, cliente):
         print( " \n Eligió retirar dinero a la cuenta")
-        print(cliente.cteCuentas())
+        if(len(cliente.cteCuentas())==0):
+            prin("  El cliente no tiene asignado ninguna cuenta")
+            return
+        else:
+            print(cliente.cteCuentas())
         opc = input(" \n Eliga el indice de la cuenta donde desee retirar dinero \n")
         cliente.getCuenta(int(opc))
         aux = cliente.getCuenta(int(opc))

@@ -1,0 +1,83 @@
+N, JUAN,34, Álvaro Obregon
+
+A,200.0,440.0
+C,200789.0,0.21
+N, JOSÉ LUIS,45, Azcapotzalco
+
+A,245400.0,0.22
+C,3000.0,34343.0
+C,23456.0,65757634.0
+N, JOSÉ,78, Benito Juarez
+
+A,200.0,440.0
+A,200.0,440.0
+A,200.0,440.0
+N, MARÍA GUADALUPE,56, Xochimilco
+
+C,2445454.0,5767678.0
+C,333333.0,400.0
+N, FRANCISCO,76, Cuauhtémoc
+
+A,20000.0,0.8
+A,50000.0,0.7
+C,222233.0,2111.0
+N, GUADALUPE,21, Iztacalco
+
+C,9000.0,600.0
+C,3000.0,7890.0
+N, MARÍA,54, Iztapalapa
+
+A,345555.0,0.25
+N,JUANA,66, Tláhuac
+
+C,30000.0,40000.0
+N, ANTONIO,55, Tlalpan
+
+A,33445.0,0.34
+A,70000.0,0.22
+C,3232324.0,213.0
+N, JESÚS,23, Miguel Hidalgo
+
+C,89098.0,900.0
+N, ÁNGEL,67,Magdalena Contreras
+
+A,34553232.0,0.33
+N, PEDRO,22,Milpa Alta
+
+A,3000.0,0.07
+A,40000.0,0.11
+N, ALEJANDRO,67,Magdalena Contreras
+
+A,66678.0,0.02
+A,5735.0,0.01
+A,64535.0,0.04
+A,789.0,0.06
+N, MANUEL,33, Miguel Hidalgo
+
+A,3455.0,0.23
+N, MARGARITA,32, Tlalpan
+
+C,234.0,6575.0
+N, MARÍA DEL CARMEN,20, Azcapotzalco
+
+C,24324.0,4000.0
+C,255555.0,33366.0
+C,20000.0,9000.0
+N, JUAN CARLOS,23, Cuauhtémoc
+
+C,1000.0,345.0
+N, ROBERTO,29, Xochimilco
+
+A,3455.0,0.222
+A,3455.0,0.4
+C,8900.0,78888.0
+N,rigoberto,24,coyoacan
+
+C,2000.0,500.0
+A,500.0,0.3
+N,milton,30,coyoacan
+
+A,400.0,0.1
+N,elias,79,tlalpan
+
+C,6000.0,8000.0

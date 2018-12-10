@@ -27,18 +27,19 @@ class Cliente:
         tmp += "\n" + str(self.__cuenta)
         return tmp"""    
     # __str__ sobreescribe el metodo str devolviendo un string
-
+    def getnombre(self):
+      return self.nombre
     def setedad(self, edad):
        self.__edad = edad
 
     def getedad (self):
-       return self.__edad
+       return self.edad
 
     def setdireccion(self, direccion):
        self.__direccion = direccion
 
     def getdireccion (self):
-       return self.__direccion
+       return self.direccion
 
     #puse los set y get para poder modificar los atributos pues pienso que pueden ir cambiando y no son constantes   
        
@@ -53,6 +54,8 @@ class Cliente:
         return
 
 #metodo que accede a una cuenta a traves de su lugar en la lista
+    def getCuentas(self):
+        return self.cuentas
     def getCuenta(self,index):
         return self.cuentas[index]
 
